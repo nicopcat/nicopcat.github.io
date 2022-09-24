@@ -28,7 +28,7 @@ export default {
       {
         text: 'Section Title A',
         items: [
-          { text: 'Item A', link: '/test/' },
+          { text: 'Item A', link: '/test/' }, // 去到test文件夹的index.md
           { text: 'Item B', link: '/item-b' },
         
         ]
