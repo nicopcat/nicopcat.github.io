@@ -1,17 +1,29 @@
 ---
 layout: home
-title: vue-template
+title: 小笔记本
+titleTemplate: Nic的小酒馆
 description: test
+lastUpdated: true
 
 hero:
-  name: vue-template🎉
+  name: 小酒馆
   text:
-  tagline: test
+  tagline: Nic的小笔记本📒
   actions:
     - theme: brand
       text: 开始
-      link: /docs/index
+      link: /javascript/
     - theme: alt
-      text: 访问github
-      link: https://nicopcat.github.io/
+      text: github
+      link: https://github.com/nicopcat
+features:
+  - icon: ⚡️
+    title: 这个功能
+    details: Lorem ipsum...
+  - icon: 🖖
+    title: 叫features
+    details: Lorem ipsum...
+  - icon: 🆒
+    title: pretty cool
+    details: Lorem ipsum...
 ---
