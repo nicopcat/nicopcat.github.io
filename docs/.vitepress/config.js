@@ -1,7 +1,7 @@
 export default {
   title: 'Vitepress',
   description: 'Just playing around.',
-  base:'/nicopcat.github.io',
+  base:'/nicopcat.github.io/',
   themeConfig: {
     siteTitle: 'My Custom Title',
     logo: 'https://blogpic-1308403500.file.myqcloud.com/avatar/small-head-king.jpg',
