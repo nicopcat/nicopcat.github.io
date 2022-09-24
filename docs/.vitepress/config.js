@@ -1,9 +1,11 @@
 export default {
   title: 'Vitepress',
   description: 'Just playing around.',
-  base:'/nicopcat.github.io/',
+  // base:'/docs/',
+  lastUpdated: true,//显示最近更新时间
+  appearance: true,//可以选择深浅主题
   themeConfig: {
-    siteTitle: 'My Custom Title',
+    siteTitle: "Nic's Doc",
     logo: 'https://blogpic-1308403500.file.myqcloud.com/avatar/small-head-king.jpg',
     // 右上角导航
     nav: [
@@ -24,6 +26,7 @@ export default {
         ]
       }
     ],
+    // 侧边导航
     sidebar: [
       {
         text: 'Section Title A',
