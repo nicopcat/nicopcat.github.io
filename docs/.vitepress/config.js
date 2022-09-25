@@ -14,6 +14,15 @@ export default {
     lastUpdatedText: '最后更新于 ',
     siteTitle: "Nic's Tavern",
     logo: 'https://blogpic-1308403500.file.myqcloud.com/avatar/small-head-king.jpg',
+    // algolia搜索
+    algolia: {
+      appId: 'CFOL320B5S',
+      apiKey: 'cbc54468c9d0e14a93d01c5e318fad98',
+      indexName: 'nicopcat.github.io',
+      // searchParameters: {
+      //     facetFilters: ['tags:guide,api']
+      // }
+    },
     // 右上角导航
     nav: [
       { text: 'JavaScript', link: '/javascript/' },
@@ -38,10 +47,10 @@ export default {
     sidebar: {
       '/javascript/':[
         {
-          text: '第二章 HTML中的 JavaScript',
+          text: '第二章',
           collapsible: true,
           items: [
-            { text: 'script标签', link: '/javascript/chap02/script-tag' }, //
+            { text: '2. HTML中的 JavaScript', link: '/javascript/chap02/script-tag' }, //
           ]
         },
         {

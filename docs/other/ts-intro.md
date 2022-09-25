@@ -3,9 +3,7 @@ layout: doc
 title: 关于本站
 ---
 
-# TypeScript 介绍
-
-### TypeScript 是什么
+# 5 分钟 TypeScript 基础
 
 TypeScript 可以看作是弥补 JavaScript 一些短板的一门语言，它是 JS 的 subset(超集)，意思就是，TS 包含了 JS，另外还有其他的一些内容，这些内容能让开发这更好地进行开发。
 
@@ -15,12 +13,12 @@ TS 的一些好处是：
 2. 清晰：显式类型声明提升代码可读性，代码校验啊可以交给编译器负责
 3. 广泛：TS 是 JS 的超集，这意味着可以在 TS 代码中使用任何 JS 代码和库
 
-### 课程中你可以学到什么？
+### 从本文中可以学到什么？
 
 - 研究 TypeScript**编译流程、工作环境**
 - 学习 TypeScript **12 个基本类型**
 
-# 了解 TS 工作流
+## 了解 TS 工作流
 
 ### 安装
 
@@ -70,7 +68,7 @@ tsc --init
 
 开启监视后，每当保存.ts 文件，IDE 就会自动将.ts 编译成.js 文件。
 
-# TS 基础
+## TS 基础
 
 ### 1.声明变量
 
@@ -235,32 +233,8 @@ fn('yo');
 
 假如`optionalParam`不用可选修饰符`?`修饰，`fn('yo')`就会报错
 
-# TS 的面对对象
-
-## 1. object 对象类型
-
-基本相似。只不过变量如果是一个 object 类型，里面的数据类型会被自动确定：
-
-```ts
-// 栗子1
-let person = {
-	name: 'Mike', // TS自动识别name为string
-	age: 10, // TS自动识别age为number
-};
-
-console.log(person.name); // Mike
-
-// 栗子2
-let person = {
-	name: 'Mike',
-	age: 10,
-};
-
-console.log(person.email); // TS中报错，这个属性不存在；JS中不报错，只是会打印 undefined
-```
-
 ---
 
-# 资源
+## 资源
 
 1. https://www.imooc.com/learn/1306

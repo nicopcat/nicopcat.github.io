@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: 关于本站
+title: JavaScript
 ---
 
 # 关于本站
