@@ -17,8 +17,9 @@ export default {
     // 右上角导航
     nav: [
       { text: 'JavaScript', link: '/javascript/' },
-      { text: '空菜单', link: '/configs' },
-      { text: '还是空菜单', link: 'https://github.com/...' },
+      { text: '其他文章', link: '/other/' },
+      { text: '工具', link: '/tools/' },
+
       // {
       //   text: 'Dropdown Menu',
       //   items: [
@@ -34,26 +35,44 @@ export default {
       // }
     ],
     // 侧边导航
-    sidebar: [
-      {
-        text: '第一节 语言基础',
-        collapsible: true,
-        items: [
-          { text: '操作符', link: '/javascript/operator' }, // 去到test文件夹的index.md
-          { text: 'Item B', link: '/item-b' },
-        
-        ]
-      },
-      {
-        text: 'Section Title B',
-        collapsible: true,
-        items: [
-          { text: 'Item C', link: '/item-c' },
-          { text: 'Item D', link: '/item-d' },
-          
-        ]
-      }
-    ],
+    sidebar: {
+      '/javascript/':[
+        {
+          text: '第二章 HTML中的 JavaScript',
+          collapsible: true,
+          items: [
+            { text: 'script标签', link: '/javascript/chap02/script-tag' }, //
+          ]
+        },
+        {
+          text: '第三章 语言基础',
+          collapsible: true,
+          items: [
+            { text: '操作符', link: '/javascript/chap03/operator' }, // 去到test文件夹的index.md          
+          ]
+        },
+      ],
+      '/other/':[
+        {
+          text: '文章',
+          collapsible: true,
+          items: [
+            { text: '养老保险怎么交，退休后能拿多少钱？', link: '/other/retire-pension' },
+            { text: 'TS基础学习', link: '/other/ts-intro' },
+
+          ]
+        },
+      ],
+      '/tools/':[
+        {
+          text: '工具',
+          items: [
+            { text: '工具页', link: '/tools/' }, //
+          ]
+        },
+      ]
+    }
+    ,
     // 底部
     footer: {
       message: 'Released under the MIT License.',
