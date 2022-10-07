@@ -26,7 +26,8 @@ export default {
     // 右上角导航
     nav: [
       { text: 'JavaScript', link: '/javascript/' },
-      { text: '其他文章', link: '/other/' },
+      { text: '兴趣点', link: '/other/' },
+      { text: '杂记', link: '/mumblejumbles/' },
       { text: '工具', link: '/tools/' },
 
       // {
@@ -69,6 +70,15 @@ export default {
             { text: '养老保险怎么交，退休后能拿多少钱？', link: '/other/retire-pension' },
             { text: 'TS基础学习', link: '/other/ts-intro' },
 
+          ]
+        },
+      ],
+      '/mumblejumbles/':[
+        {
+          text: '杂记们',
+          collapsible: true,
+          items: [
+            { text: '2022.10 National Holidays Diaries', link: '/mumblejumbles/2022-national-holidays' },
           ]
         },
       ],
