@@ -4,6 +4,9 @@ export default {
   appearance: true,//可以选择深浅主题
   ignoreDeadLinks: true,
   lastUpdated: true,//显示最近更新时间
+  head:[
+    ['link', { rel: 'icon', href: '/favicon.ico' }]
+  ],
   markdown: {
     theme: 'one-dark-pro',
     lineNumbers: true
@@ -15,17 +18,18 @@ export default {
     siteTitle: "Nic's Tavern",
     logo: 'https://blogpic-1308403500.file.myqcloud.com/avatar/small-head-king.jpg',
     // algolia搜索
-    algolia: {
-      appId: 'CFOL320B5S',
-      apiKey: 'cbc54468c9d0e14a93d01c5e318fad98',
-      indexName: 'nicopcat.github.io',
-      // searchParameters: {
-      //     facetFilters: ['tags:guide,api']
-      // }
-    },
+    // algolia: {
+    //   apiId: 'CFOL320B5S',
+    //   apiKey: 'cbc54468c9d0e14a93d01c5e318fad98',
+    //   indexName: 'app',
+    //   searchParameters: {
+    //     facetFilters: ['tags:guide,api']
+    //   }
+    // },
     // 右上角导航
     nav: [
       { text: 'JavaScript', link: '/javascript/' },
+      { text: 'uniapp', link: '/uniapp/' },
       { text: '兴趣点', link: '/other/' },
       { text: '杂记', link: '/mumblejumbles/' },
       { text: '工具', link: '/tools/' },
@@ -61,6 +65,16 @@ export default {
             { text: '操作符', link: '/javascript/chap03/operator' }, // 去到test文件夹的index.md          
           ]
         },
+      ],
+      '/uniapp/':[
+        {
+          text: 'uniapp',
+          collapsible: true,
+          items: [
+            { text: '如何构建一个uniapp', link: '/uniapp/how-to-start-uniapp' }, 
+            { text: 'uniapp 开发：微信公众号获得用户信息过程', link: '/uniapp/h5-weixin-platform' }, 
+          ]
+        }
       ],
       '/other/':[
         {
