@@ -16,7 +16,8 @@ export default {
     outlineTitle: '目录',
     lastUpdatedText: '最后更新于 ',
     siteTitle: "Nic's Tavern",
-    logo: 'https://blogpic-1308403500.file.myqcloud.com/avatar/small-head-king.jpg',
+    // logo: 'https://blogpic-1308403500.file.myqcloud.com/avatar/small-head-king.jpg',
+    logo: 'static/android-chrome-192x192.png',
     // algolia搜索
     // algolia: {
     //   apiId: 'CFOL320B5S',
@@ -28,11 +29,19 @@ export default {
     // },
     // 右上角导航
     nav: [
-      { text: 'JavaScript', link: '/javascript/' },
-      { text: 'uniapp', link: '/uniapp/' },
-      { text: '兴趣点', link: '/other/' },
+      {
+        text: '前端',
+        items: [
+          { text: 'JavaScript', link: '/javascript/' },
+          { text: 'Vue', link: '/vue/dodo-v2' },
+          { text: 'uniapp', link: '/uniapp/' },
+          { text: '其他', link: '/tech_other/axios_basics' },
+        ]
+      },
+      // { text: 'JavaScript', link: '/javascript/' },
+      { text: '其他文字', link: '/other/' },
       { text: '杂记', link: '/mumblejumbles/' },
-      { text: '工具', link: '/tools/' },
+      { text: '关于我', link: '/about/' },
 
       // {
       //   text: 'Dropdown Menu',
@@ -52,17 +61,46 @@ export default {
     sidebar: {
       '/javascript/':[
         {
-          text: '第二章',
+          text: 'JavaScript高级程序设计 笔记',
           collapsible: true,
           items: [
-            { text: '2. HTML中的 JavaScript', link: '/javascript/chap02/script-tag' }, //
+            { text: 'HTML中的 JavaScript', link: '/javascript/js_4_notes/script_tag' }, 
+            { text: '操作符', link: '/javascript/js_4_notes/operator' },     
           ]
         },
         {
-          text: '第三章 语言基础',
+          text: '其他',
           collapsible: true,
           items: [
-            { text: '操作符', link: '/javascript/chap03/operator' }, // 去到test文件夹的index.md          
+            { text: 'codewars练习', link: '/javascript/other/codewars' }, 
+            { text: '如何优雅地用JS创建包含0', link: '/javascript/other/js-create-number-array' }, 
+            { text: 'JavaScript ES6 Module 模块导入/导出', link: '/javascript/other/JS-ES-Module' }, 
+            { text: '如何浅合并一下 JavaScript 对象（其实希望深拷贝）', link: '/javascript/other/js-object-merge' }, 
+            { text: '用简单的方式理解JavaScript Promise', link: '/javascript/other/js-promise' }, 
+            { text: 'let & const 对比 var 的新特性', link: '/javascript/other/let-n-const' }, 
+            { text: '力扣 oh Leetcode', link: '/javascript/other/my-miserable-leetcode' }, 
+            { text: 'JavaScript 中 this 的绑定', link: '/javascript/other/this-and-context' }, 
+            { text: 'ES6数组与对象的解构赋值', link: '/javascript/other/variable-destructuring' }, 
+
+
+          ]
+        },
+      ],
+      '/vue/':[
+        {
+          text: 'vue笔记',
+          collapsible: true,
+          items: [
+            { text: 'Vue-Cli重写一个TO-DO APP', link: '/vue/dodo-v2' },
+            { text: '用Vue实现多标签页面（tab栏）切换的两种方法', link: '/vue/tabs-with-vue' },       
+            { text: 'cloak的用法', link: '/vue/v-cloak' },       
+            { text: 'Vue 过渡动画效果', link: '/vue/vue-animations-transitions' },       
+            { text: 'Parent组件利用 Props 给 Child 组件传值小故事', link: '/vue/vue-props-story' },       
+            { text: 'Vue Proxy Getter Setter', link: '/vue/vue-proxy-getter-setter' },       
+            { text: '复习 Vue slot：插槽', link: '/vue/vue-slot' },       
+            { text: 'Vue emits 警告', link: '/vue/vue-warn-emits' },       
+            { text: '用 Vue 写一个天气 Web App', link: '/vue/vue-warn-evue-weather-app' },       
+
           ]
         },
       ],
@@ -71,19 +109,40 @@ export default {
           text: 'uniapp',
           collapsible: true,
           items: [
-            { text: '如何构建一个uniapp', link: '/uniapp/how-to-start-uniapp' }, 
-            { text: 'uniapp 开发：微信公众号获得用户信息过程', link: '/uniapp/h5-weixin-platform' }, 
+            { text: '如何构建一个uniapp', link: '/uniapp/how_to_start_uniapp' }, 
+            { text: 'uniapp 开发：微信公众号获得用户信息过程', link: '/uniapp/h5_weixin_platform' }, 
+          ]
+        }
+      ],
+      '/tech_other/':[
+        {
+          text: '其他',
+          collapsible: true,
+          items: [
+            { text: '了解 axios', link: '/tech_other/axios_basics' }, 
+            { text: '如何使用Netlify快速部署个人项目', link: '/tech_other/vue_netlify_deploy' }, 
+            { text: 'Git使用笔记', link: '/tech_other/git_guide' }, 
+            { text: 'Git拉取远程分支到本地的方法', link: '/tech_other/git_remote_branch' }, 
+            { text: '好玩的JavaScrip动画框架——GSAP', link: '/tech_other/GSAP_intro' }, 
+            { text: '2分钟创建一个简易Node.js服务器', link: '/tech_other/node_server' }, 
+            { text: 'Node.js GET请求', link: '/tech_other/node_GET' }, 
+            { text: 'Tech Daily 001', link: '/tech_other/tech_daily_001' }, 
+            { text: '如何用腾讯云的储存对象(COS)结合CDN作图床', link: '/tech_other/Tencent_Cloud_COS_CDN' }, 
+            { text: '如何在vscode 启动调试工具', link: '/tech_other/vscode_debugger' }, 
+            { text: 'VSCode常用快捷键', link: '/tech_other/vscode_shortcuts' }, 
+            { text: '打包利器Webpack和它基本配置', link: '/tech_other/webpack_basics' }, 
+            { text: 'Node.js POST请求', link: '/tech_other/node_POST' }, 
+            { text: 'TS基础学习', link: '/tech_other/ts-intro' },
           ]
         }
       ],
       '/other/':[
         {
-          text: '文章',
+          text: '目录',
           collapsible: true,
           items: [
-            { text: '养老保险怎么交，退休后能拿多少钱？', link: '/other/retire-pension' },
-            { text: 'TS基础学习', link: '/other/ts-intro' },
-
+            { text: '工具', link: '/other/my_tools' },
+            { text: '养老保险怎么交，退休后能拿多少钱？', link: '/other/retire_pension' },
           ]
         },
       ],

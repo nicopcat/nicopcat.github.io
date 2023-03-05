@@ -1,9 +1,10 @@
 ---
 layout: doc
 title: script 元素
+lastUpdated: true
 ---
 
-# 2. HTML 中的 JavaScript
+# HTML 中的 JavaScript
 
 这一节主要讨论如何将 JavaScript 引入 HTML 中。
 

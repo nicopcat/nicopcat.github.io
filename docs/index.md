@@ -13,15 +13,15 @@ hero:
     alt: capybara_janew
   actions:
     - theme: brand
-      text: 开始
-      link: /javascript/
+      text: 我是谁？
+      link: /about/
     - theme: alt
       text: github
       link: https://github.com/nicopcat
 features:
   - icon: 💻
     title: A frontend dev begginer
-    details: H5, C3, JS, Vue, E-UI, Uniapp ..
+    details: much to learn and try ✌
   - icon: 🎵
     title: A deep listener
     details: 幸福莫过于期待着下一张专辑
