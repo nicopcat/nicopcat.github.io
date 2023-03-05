@@ -6,8 +6,8 @@ title: Vue emits 警告
 
 用 $emits 写组件通信的时候报错了：
 > [Vue warn]: Extraneous non-emits event listeners (del) were passed to component but could not be automatically inherited because component renders fragment or text root nodes. If the listener is intended to be a component custom event listener only, declare it using the "emits" option. 
-  at <FortuneTransfer cash="珠宝若干" real-easte="House in Winona" onDel=fn<bound deleteIt> > 
-  at <App>
+  at `<FortuneTransfer cash="珠宝若干" real-easte="House in Winona" onDel=fn<bound deleteIt> > `
+  at `<App>`
 
 父组件部分
 ``` javascript

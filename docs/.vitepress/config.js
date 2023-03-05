@@ -33,7 +33,7 @@ export default {
         text: '前端',
         items: [
           { text: 'JavaScript', link: '/javascript/' },
-          { text: 'Vue', link: '/vue/dodo-v2' },
+          { text: 'Vue', link: '/vue/dodo_v2' },
           { text: 'uniapp', link: '/uniapp/' },
           { text: '其他', link: '/tech_other/axios_basics' },
         ]
@@ -90,15 +90,15 @@ export default {
           text: 'vue笔记',
           collapsible: true,
           items: [
-            { text: 'Vue-Cli重写一个TO-DO APP', link: '/vue/dodo-v2' },
-            { text: '用Vue实现多标签页面（tab栏）切换的两种方法', link: '/vue/tabs-with-vue' },       
+            { text: 'Vue-Cli重写一个TO-DO APP', link: '/vue/dodo_v2' },
+            { text: '用Vue实现多标签页面（tab栏）切换的两种方法', link: '/vue/tabs_with_vue' },       
             { text: 'cloak的用法', link: '/vue/v-cloak' },       
-            { text: 'Vue 过渡动画效果', link: '/vue/vue-animations-transitions' },       
-            { text: 'Parent组件利用 Props 给 Child 组件传值小故事', link: '/vue/vue-props-story' },       
-            { text: 'Vue Proxy Getter Setter', link: '/vue/vue-proxy-getter-setter' },       
-            { text: '复习 Vue slot：插槽', link: '/vue/vue-slot' },       
-            { text: 'Vue emits 警告', link: '/vue/vue-warn-emits' },       
-            { text: '用 Vue 写一个天气 Web App', link: '/vue/vue-warn-evue-weather-app' },       
+            { text: 'Vue 过渡动画效果', link: '/vue/vue_animations_transitions' },       
+            { text: 'Parent组件利用 Props 给 Child 组件传值小故事', link: '/vue/vue_props_story' },       
+            { text: 'Vue Proxy Getter Setter', link: '/vue/vue_proxy_getter_setter' },       
+            { text: '复习 Vue slot：插槽', link: '/vue/vue_slot' },       
+            { text: 'Vue emits 警告', link: '/vue/vue_warn_emits' },       
+            { text: '用 Vue 写一个天气 Web App', link: '/vue/vue_weather_app' },       
 
           ]
         },

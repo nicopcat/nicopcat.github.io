@@ -55,14 +55,13 @@ title: Vue 过渡动画效果
 ![squere-animation-2](https://blogpic-1308403500.cos.ap-shanghai.myqcloud.com/markdown/squere-animation-2.gif)
 
 
-# Vue.js 过渡& 动画
 ## 单元素/组件的过渡
 用`<transition></transition>`包裹目标元素或组件，可以添加进入或离开过渡效果
 - 条件渲染 (使用 v-if)
 - 条件展示 (使用 v-show)
 - 动态组件
 - 组件根节点
-- 杯<transition>包裹的组件或元素，只可以有一个direct child element （除了一个例外）
+- 被`<transition>`包裹的组件或元素，只可以有一个direct child element （除了一个例外）
 
 ### Vue 提供的几个过渡 class
 在进入/离开的过渡中，会有 6 个 class 切换。

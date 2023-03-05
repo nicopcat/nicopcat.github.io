@@ -1,10 +1,5 @@
 ---
 title: "打包利器Webpack和它基本配置"
-date: 2022-07-09T22:00:00+08:00
-# publishDate: 2022-07-07T18:00:00+08:00
-tags: ["Node.js","Webpack","打包"]
-draft: false
-showToc: false
 layout: doc
 ---
 # 打包利器Webpack和它基本配置
@@ -38,7 +33,7 @@ webpack的核心概念：
 
 一个简单的配置例子：
 
-```jsx
+```js
 const path = require('path')
 
 module.exports = {
@@ -76,7 +71,7 @@ Webpack可以通过`import`导入任何类型的模块，使用的工具就是Lo
 1. `test` 属性，识别出哪些文件会被转换。
 2. `use` 属性，定义出在进行转换时，应该使用哪个 loader。
 
-```jsx
+```js
 const path = require('path');
 
 module.exports = {
@@ -96,7 +91,7 @@ loader 用于转换某些类型的模块，而插件则可以用于执行范围�
 使用插件的方式：`require()`
 
 **webpack.config.js**
-```jsx
+```js
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // 指定html模板插件
 const webpack = require('webpack'); // 用于访问内置插件
 
@@ -126,7 +121,7 @@ module.exports = {
 
 # 实战
 新建文件：
-```plain-text
+```
 webpack-demo
   | - package.json
   | - package-lock.json
@@ -147,7 +142,7 @@ webpack-demo
 
 
 **main.js**: 一些操作DOM变换颜色的脚本
-```jsx
+```js
 const divEL = document.querySelector('div');
 divEL.addEventListener('click', () => {
 	divEL.style.backgroundColor = 'Red'
@@ -155,7 +150,7 @@ divEL.addEventListener('click', () => {
 ```
 
 **webpack.config.js**
-```jsx
+```js
 const path = require('path')
 
 module.exports = {
@@ -187,7 +182,7 @@ Module not found: Error: Can't resolve './main.js' in 'D:\Dropbox\Coding\playgro
 
 **package.json**
 
-```jsx
+```js
 {
   "name": "webpack-demo",  // 项目名称
   "version": "1.0.0",
@@ -258,7 +253,7 @@ npm i -D style-loader css-loader
 
 **webpack.config.js**
 
-```jsx
+```js
 const path = require('path')
 
 module.exports = {
@@ -281,7 +276,7 @@ module.exports = {
 
 现在，尝试在./src下添加一个css文件：`style.css`。并将其 import 到我们的 `index.js`中：
 
-```jsx
+```js
 import './style.css';
 
 const divEL = document.querySelector('div');
