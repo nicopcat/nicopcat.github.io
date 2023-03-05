@@ -38,9 +38,8 @@ export default {
           { text: '其他', link: '/tech_other/axios_basics' },
         ]
       },
-      // { text: 'JavaScript', link: '/javascript/' },
       { text: '其他文字', link: '/other/' },
-      { text: '杂记', link: '/mumblejumbles/' },
+      // { text: '杂记', link: '/mumblejumbles/' },
       { text: '关于我', link: '/about/' },
 
       // {
@@ -134,7 +133,15 @@ export default {
             { text: 'Node.js POST请求', link: '/tech_other/node_POST' }, 
             { text: 'TS基础学习', link: '/tech_other/ts-intro' },
           ]
-        }
+        },
+        {
+          text: 'SQL',
+          collapsible: true,
+          items: [
+            { text: 'SQL Murder Mystery', link: '/tech_other/SQL_Murder_Mystery' },
+            { text: 'Select Star SQL 01', link: '/tech_other/Select_Star_SQL_Chapter01' },
+          ]
+        },
       ],
       '/other/':[
         {
@@ -146,15 +153,15 @@ export default {
           ]
         },
       ],
-      '/mumblejumbles/':[
-        {
-          text: '杂记们',
-          collapsible: true,
-          items: [
-            { text: '2022.10 National Holidays Diaries', link: '/mumblejumbles/2022-national-holidays' },
-          ]
-        },
-      ],
+      // '/mumblejumbles/':[
+      //   {
+      //     text: '杂记们',
+      //     collapsible: true,
+      //     items: [
+      //       { text: '2022.10 National Holidays Diaries', link: '/mumblejumbles/2022-national-holidays' },
+      //     ]
+      //   },
+      // ],
       '/tools/':[
         {
           text: '工具',
