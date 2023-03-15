@@ -1,9 +1,9 @@
 ---
 layout: doc
-title: 如何开始一个 uniapp 项目
+title: （一）创建 uniapp 项目
 ---
 
-# 如何开始一个 uniapp 项目
+# （一）创建uniapp项目
 
 ## 方案一：使用 uniapp 推荐的 HbuilderX 编辑器
 
@@ -47,9 +47,12 @@ https://uniapp.dcloud.net.cn/quickstart-hx.html
 
 菜单栏 - 发行 - 选择需要的发行端
 
-## 方案二：使用 vue-cli 构建
+## 方案二：使用脚手架
+其实还是可以用VSCode开发的。
 
-### 安装 vue-cli 脚手架
+使用Vue-cli构建，npm/yarn包管理，webpack打包————标准化的Vue项目✔
+
+### 全局安装 vue-cli
 
 https://uniapp.dcloud.net.cn/quickstart-cli.html
 
@@ -59,9 +62,7 @@ npm install -g @vue/cli@4
 
 这里指定版本，以免最新的有什么问题。
 
-### 创建 uni-app
-
-创建正式版：
+### 创建 uni-app 项目
 
 ```
 vue create -p dcloudio/uni-preset-vue my-project
@@ -69,9 +70,8 @@ vue create -p dcloudio/uni-preset-vue my-project
 
 创建完成，命令行会让你选择一个模板。默认模板以外的模板，会有一些内置的组件，供初学者学习。
 
-### 运行和发布
+### 运行
 
 ```
-npm run dev:%PLATFORM%
-npm run build:%PLATFORM%
+npm run serve  或 yarn serve
 ```

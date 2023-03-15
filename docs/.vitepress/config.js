@@ -34,7 +34,7 @@ export default {
         items: [
           { text: 'JavaScript', link: '/javascript/' },
           { text: 'Vue', link: '/vue/dodo_v2' },
-          { text: 'uniapp', link: '/uniapp/' },
+          { text: 'Uniapp', link: '/uniapp/' },
           { text: '其他', link: '/tech_other/axios_basics' },
         ]
       },
@@ -93,8 +93,7 @@ export default {
             { text: 'Vue-Cli重写一个TO-DO APP', link: '/vue/dodo_v2' },
             { text: '用Vue实现多标签页面（tab栏）切换的两种方法', link: '/vue/tabs_with_vue' },       
             { text: 'cloak的用法', link: '/vue/v-cloak' },       
-            { text: 'Vue 过渡动画效果', link: '/vue/vue_animations_transitions' },       
-            { text: 'Parent组件利用 Props 给 Child 组件传值小故事', link: '/vue/vue_props_story' },       
+            { text: 'Vue 过渡动画效果', link: '/vue/vue_animations_transitions' },           
             { text: 'Vue Proxy Getter Setter', link: '/vue/vue_proxy_getter_setter' },       
             { text: '复习 Vue slot：插槽', link: '/vue/vue_slot' },       
             { text: 'Vue emits 警告', link: '/vue/vue_warn_emits' },       
@@ -108,7 +107,8 @@ export default {
           text: 'uniapp',
           collapsible: true,
           items: [
-            { text: '如何构建一个uniapp', link: '/uniapp/how_to_start_uniapp' }, 
+            { text: '（一）创建uniapp项目', link: '/uniapp/01_create_uniapp_proj' }, 
+            { text: '（二）引入uni-ui', link: '/uniapp/02_import_uni_ui' }, 
             { text: 'uniapp 开发：微信公众号获得用户信息过程', link: '/uniapp/h5_weixin_platform' }, 
           ]
         }
