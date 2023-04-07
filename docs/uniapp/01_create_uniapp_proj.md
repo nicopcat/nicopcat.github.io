@@ -1,27 +1,28 @@
 ---
 layout: doc
-title: （一）创建 uniapp 项目
+title: （一）创建一个 uniapp 项目
 ---
 
-# （一）创建uniapp项目
+# （一）创建一个 uniapp 项目
 
-## 方案一：使用 uniapp 推荐的 HbuilderX 编辑器
+## 方案一：使用 HbuilderX 创建项目
 
 https://uniapp.dcloud.net.cn/quickstart-hx.html
 
-首先，下载 HbuilderX。
-
-一开始真心不舍得抛弃宇宙第一好用编辑器 VSCode，无奈还是 HBX 对 uniapp 支持好一点，就开始用起了它。
+HXB是官方推荐的编辑器。确实，在某些方面确实比较便利，例如引入插件，打包等等。如果实在并不想用BHX，下面还会介绍如何在VSCode中创建uniapp项目。
+### 下载 HbuilderX
+https://dcloud.io/hbuilderx.html
 
 ### 创建一个 uni-app demo
+打开 HBX，视线来到左上角工具栏 文件 -> 新建 -> 项目（或使用快捷键 Ctrl+N）
 
-在 HBuilderX 新建 uni-app 项目的模板中，选择需要的模板。不需要模板就选择默认模板。
+没有特殊需要的话，选择默认模板。
 
-在点击工具栏里的文件 -> 新建 -> 项目（快捷键 Ctrl+N）
+模板选好后，输入项目名称，然后点击右下角“创建”，就完成了第一步。
 
 ### 运行 uniapp
 
-进入 hello-uniapp 项目，点击工具栏的运行 -> 运行到浏览器 -> 选择浏览器，即可体验 uni-app 的 web 版。
+进入刚刚项目，点击工具栏的运行 -> 运行到浏览器 -> 选择浏览器，即可体验 uni-app 的 web 版。
 
 目录：
 
