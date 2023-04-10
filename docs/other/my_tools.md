@@ -19,6 +19,8 @@ title: tools
 
   针对离线不可使用这点，看来要定期备份了。目前个人版支持 HTML, Markdown 和 CSV 导出，企业版增加 PDF 导出。
 
+  * Notion现已退出AI功能，免费限额20条~
+
   使用方向：系统性笔记构建，收入记录，备课，读书记录等
 
 - [Obsidian](https://obsidian.md/)
@@ -37,9 +39,18 @@ title: tools
 
   开发者认为，灵感需要彼此关联，还需要从记录的历史中时不时拿出来审视，常看常新。它希望给写作者一种全新的方式去看待写作，每日积累，通过批注等功能让积累的资讯产生关联和额外的价值。
 
+
+- Apple 便签 X [Montaigne](https://montaigne.io/)
+
+  Apple自带的便签，适合快速记录一些灵感，搭配设置简单的Montaigne，能让你的便签瞬间变成一篇博文。
+
+
 ### 梯子
 
 - [极速 SS](https://jsss-24.top/)
+- [一元机场](https://xn--4gq62f52gdss.com/)
+
+
 
 ### 流程图
 

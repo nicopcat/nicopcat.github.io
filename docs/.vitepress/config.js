@@ -80,8 +80,6 @@ export default {
             { text: '力扣 oh Leetcode', link: '/javascript/other/my-miserable-leetcode' }, 
             { text: 'JavaScript 中 this 的绑定', link: '/javascript/other/this-and-context' }, 
             { text: 'ES6数组与对象的解构赋值', link: '/javascript/other/variable-destructuring' }, 
-
-
           ]
         },
       ],
@@ -98,7 +96,6 @@ export default {
             { text: '复习 Vue slot：插槽', link: '/vue/vue_slot' },       
             { text: 'Vue emits 警告', link: '/vue/vue_warn_emits' },       
             { text: '用 Vue 写一个天气 Web App', link: '/vue/vue_weather_app' },       
-
           ]
         },
       ],
@@ -109,6 +106,7 @@ export default {
           items: [
             { text: '（一）创建uniapp项目', link: '/uniapp/01_create_uniapp_proj' }, 
             { text: '（二）引入uni-ui', link: '/uniapp/02_import_uni_ui' }, 
+            { text: '（三）图片/文件上传', link: '/uniapp/03_file_upload' }, 
             { text: 'uniapp 开发：微信公众号获得用户信息过程', link: '/uniapp/h5_weixin_platform' }, 
           ]
         }
