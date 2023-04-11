@@ -71,3 +71,16 @@ npm i @dcloudio/uni-ui   或   yarn add @dcloudio/uni-ui
 ```
 
 引入后就可以愉快滴使用ui框架了。
+
+##  easycom
+vue原生开发，引用组件的时候需要先 import，然后在components中声明，然后才能使用。
+
+uniapp开发中，可以用easycom这个内置工具省掉注册和声明这两个步骤，直接用组件。
+
+使用的条件是，组件按照**特定的命名方式**，放到components里（或uni_modules）
+
+如果出现报错，可能有两个原因：
+
+1. 没有下载这个插件（在用uni_ui的时候出现过）
+2. 组件没有按规则命名
+3. 第三方组件可能需要额外配置

@@ -1,23 +1,20 @@
 ---
-title: "SQL学习 - Select Star SQL 01"
+title: "Chapter 1  - Beazley's Last Statement "
 date: 2023-02-27T17:00:00+08:00
 tags: ["SQL"]
 draft: false
 showToc: false
 layout: doc
 ---
-# SQL学习 - Select Star SQL 01
+# Chapter 1  - Beazley's Last Statement
 
 >If you'd like a more complete introduction to SQL, try Select Star SQL.  
 
 
 
-解决完 SQL Murder Mystery 觉得还不过瘾（？），可以试试另一个学习网站：**[Select Star SQL](https://selectstarsql.com/)**
+解决完 SQL Murder Mystery 觉得还不过瘾（？）
 
-
-网址：https://selectstarsql.com/
-
----
+可以试试另一个学习网站 [Select Star SQL](https://selectstarsql.com/) 
 
 
 ## 用SQL算数

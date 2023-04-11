@@ -3,7 +3,7 @@ layout: doc
 title: uniapp开发
 ---
 
-# uniapp 是什么
+# Uniapp 是什么
  
 1. 这是一个 Vue 语法的前端框架
 2. 多用于国内各种小程序和 H5

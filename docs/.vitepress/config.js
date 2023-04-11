@@ -29,32 +29,20 @@ export default {
     // },
     // 右上角导航
     nav: [
+      // 下拉菜单
       {
         text: '前端',
         items: [
           { text: 'JavaScript', link: '/javascript/' },
           { text: 'Vue', link: '/vue/dodo_v2' },
           { text: 'Uniapp', link: '/uniapp/' },
+          { text: 'SQL', link: '/SQL/SQL_Murder_Mystery' },
           { text: '其他', link: '/tech_other/axios_basics' },
         ]
       },
       { text: '其他文字', link: '/other/' },
       // { text: '杂记', link: '/mumblejumbles/' },
       { text: '关于我', link: '/about/' },
-
-      // {
-      //   text: 'Dropdown Menu',
-      //   items: [
-      //     {
-      //       text:'test222',
-      //       items: [
-      //         { text: 'Item A', link: '/item-1' },
-      //         { text: 'Item B', link: '/item-2' },
-      //         { text: 'Item C', link: '/item-3' }
-      //       ]
-      //     }
-      //   ]
-      // }
     ],
     // 侧边导航
     sidebar: {
@@ -107,9 +95,37 @@ export default {
             { text: '（一）创建uniapp项目', link: '/uniapp/01_create_uniapp_proj' }, 
             { text: '（二）引入uni-ui', link: '/uniapp/02_import_uni_ui' }, 
             { text: '（三）图片/文件上传', link: '/uniapp/03_file_upload' }, 
-            { text: 'uniapp 开发：微信公众号获得用户信息过程', link: '/uniapp/h5_weixin_platform' }, 
+            { text: '（四）路由传参', link: '/uniapp/04_emit_params' }, 
+            { text: '（五）列表分页', link: '/uniapp/05_pagination' }, 
+          ]
+        },
+        {
+          text: '微信小程序',
+          collapsible: true,
+          items: [
+            { text: '微信公众号获得用户信息过程', link: '/uniapp/h5_weixin_platform' }, 
           ]
         }
+      ],
+      '/SQL/':[
+        {
+          text: 'SQL Murder Mystery',
+          collapsible: true,
+          items: [
+            { text: 'SQL Murder Mystery', link: '/SQL/SQL_Murder_Mystery' },
+          ]
+        },
+        {
+          text: 'Select Star SQL',
+          collapsible: true,
+          items: [
+            { text: "Chapter 1 - Beazley's Last Statement", link: '/SQL/01_Select_Star_SQL' },
+            { text: 'Chapter 2 - Claims of Innocence', link: '/SQL/02_Select_Star_SQL' },
+            { text: 'Chapter 3 - The Long Tail', link: '/SQL/03_Select_Star_SQL' },
+            { text: 'Chapter 4 - Execution Hiatuses', link: '/SQL/04_Select_Star_SQL' },
+          ]
+        }
+
       ],
       '/tech_other/':[
         {
@@ -132,15 +148,9 @@ export default {
             { text: 'TS基础学习', link: '/tech_other/ts-intro' },
           ]
         },
-        {
-          text: 'SQL',
-          collapsible: true,
-          items: [
-            { text: 'SQL Murder Mystery', link: '/tech_other/SQL_Murder_Mystery' },
-            { text: 'Select Star SQL 01', link: '/tech_other/Select_Star_SQL_Chapter01' },
-          ]
-        },
+       
       ],
+      
       '/other/':[
         {
           text: '目录',
