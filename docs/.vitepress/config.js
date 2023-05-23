@@ -68,6 +68,7 @@ export default {
             { text: '力扣 oh Leetcode', link: '/javascript/other/my-miserable-leetcode' }, 
             { text: 'JavaScript 中 this 的绑定', link: '/javascript/other/this-and-context' }, 
             { text: 'ES6数组与对象的解构赋值', link: '/javascript/other/variable-destructuring' }, 
+            { text: 'flutter 已未读消息存本地', link: '/javascript/other/flutter_notice_localStorage' }, 
           ]
         },
       ],
