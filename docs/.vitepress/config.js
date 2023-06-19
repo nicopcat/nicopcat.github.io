@@ -31,7 +31,7 @@ export default {
     nav: [
       // 下拉菜单
       {
-        text: '前端',
+        text: 'FRONTEND',
         items: [
           { text: 'JavaScript', link: '/javascript/' },
           { text: 'Vue', link: '/vue/001_dodo_v2' },
@@ -40,12 +40,35 @@ export default {
           { text: '其他', link: '/tech_other/axios_basics' },
         ]
       },
+      {
+        text: 'BACKEND',
+        items: [
+          { text: 'Node.js', link: '/backend/Node.js/' },
+        ]
+      },
       { text: '其他文字', link: '/other/' },
       // { text: '杂记', link: '/mumblejumbles/' },
       { text: '关于我', link: '/about/' },
     ],
     // 侧边导航
     sidebar: {
+      '/backend/Node.js/':[
+        {
+          text: 'Node.js 入门',
+          collapsible: true,
+          items: [
+            { text: '2 - Node.js Basics', link: '/backend/Node.js/02_Node_js_Basics.md' }, 
+            { text: '3 - Clients & Servers', link: '/backend/Node.js/03_Clients_and_Servers.md' },
+            { text: '4 - NPM', link: '/backend/Node.js/04_NPM' },
+            { text: '6 - Express Apps', link: '/backend/Node.js/06_Express_Apps' },
+            { text: '7 - View Engines', link: '/backend/Node.js/07_View_Engines' },
+            { text: '8 - Middleware', link: '/backend/Node.js/08_Middleware' },
+            { text: '9 - MongoDB', link: '/backend/Node.js/09_MongoDB' },
+            { text: '10 - Get, Post & Delete Requests', link: '/backend/Node.js/10_Get_Post_Delete_Requests' },
+            { text: '11 - Express Router & MVC', link: '/backend/Node.js/11_Express_Router_MVC' },
+          ]
+        },
+      ],
       '/javascript/':[
         {
           text: 'JavaScript高级程序设计 笔记',
@@ -68,7 +91,7 @@ export default {
             { text: '力扣 oh Leetcode', link: '/javascript/other/my-miserable-leetcode' }, 
             { text: 'JavaScript 中 this 的绑定', link: '/javascript/other/this-and-context' }, 
             { text: 'ES6数组与对象的解构赋值', link: '/javascript/other/variable-destructuring' }, 
-            { text: 'flutter 已未读消息存本地', link: '/javascript/other/flutter_notice_localStorage' }, 
+
           ]
         },
       ],
@@ -150,6 +173,7 @@ export default {
             { text: '打包利器Webpack和它基本配置', link: '/tech_other/webpack_basics' }, 
             { text: 'Node.js POST请求', link: '/tech_other/node_POST' }, 
             { text: 'TS基础学习', link: '/tech_other/ts-intro' },
+            { text: 'flutter 已未读消息存本地', link: '/tech_other/flutter_notice_localStorage' }, 
           ]
         },
        
