@@ -57,6 +57,7 @@ export default {
           text: 'Node.js 入门',
           collapsible: true,
           items: [
+            { text: '1 - Introduction & Setup', link: '/backend/Node.js/01_Introduction_and_Setup' }, 
             { text: '2 - Node.js Basics', link: '/backend/Node.js/02_Node_js_Basics.md' }, 
             { text: '3 - Clients & Servers', link: '/backend/Node.js/03_Clients_and_Servers.md' },
             { text: '4 - NPM', link: '/backend/Node.js/04_NPM' },

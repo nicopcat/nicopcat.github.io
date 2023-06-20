@@ -22,7 +22,7 @@ const server = http.createServer((req, res) => {
 });
 ```
 
-最后是监听该服务器，当有访问的时候，进行监听。监听时需要设置prot和ip地址。
+最后是监听该服务器，当有访问的时候，进行监听。监听时需要设置port和ip地址。
 ```js
 server.listen(3000, 'localhost', () => {
   console.log('port: 3000');
@@ -47,7 +47,7 @@ server.listen(3000, 'localhost', () => {
 ## Requests & Responses
 从request身上，可以访问到method, url等属性。method让我们知道进行的是哪种请求，url可以让我们设置简单的路由。
 
-从respond身上也能获取许多属性，这些属性可以设置cookies, 把一些重要信心返回给客户端，比如headers, 状态码等等，让客户端知道这次请求的效果如何。
+从respond身上也能获取许多属性，这些属性可以设置cookies, 把一些重要信息返回给客户端，比如headers, 状态码等等，让客户端知道这次请求的效果如何。
 
 可以简答低用response返回一些HTML标签，
 ```js

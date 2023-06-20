@@ -37,9 +37,9 @@ app.get('/about', (req, res) => {
 })
 ```
 
-以上代码分别为根目录`/`设置了路径，和返回的html文件，浏览器输入/`/`时，会访问index.html，浏览器输入`/about`，则访问about.html。
+以上代码分别为根目录`/`设置了路径，和返回的html文件，浏览器输入`/`时，会访问**index.html**，浏览器输入`/about`，则访问**about.html**。
 
-还可以简单地在前台加上导航栏
+然后加上一个navbar
 ```html
   <nav>
     <a href="/">Home</a>

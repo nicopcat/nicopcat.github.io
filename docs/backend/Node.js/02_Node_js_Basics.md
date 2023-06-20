@@ -6,26 +6,28 @@ title: 2 - Node.js Basics
 # 2 - Node.js Basics
 
 ## install node
-
-install node
-查看版本号
+安装完成后，输入命令查看Node.js版本号：
 ```
 node -v
 ```
 ## window object
-js运行在浏览器的时候，浏览器会提供全局的window对象，里面包含很多方法，例如window.setTimeout, window.setInterval等等。
+JavaScript在浏览器中运行的时候，浏览器会提供全局的window对象，其中包含很多方法，例如定时器`window.setTimeout`, `window.setInterval`等等。
 
-在Node环境里呢？也有window对象。用法和在浏览器中一样。
+在Node环境里也有window对象，用法和在浏览器中一样。
 
 ## DOM
-Node环境中不能再操作DOM，这是跟浏览器不一样的地方。
+Node环境中也不能（不需要）操作DOM，这是跟浏览器不一样的地方。
 
-## Import/Export
+## 模块的导入/导出 Import/Export 
+
+Node.js中推荐使用 CommonJS 对模块导入导出
+
 Since Node.js v12, you can use both `require()` and `import` in Node.js, while you are limited to `import` in the browser.
 
-### CommonJS Module
-export:
+### CommonJS Module ✔
 ```js
+ // export:
+
 const a = '哈哈哈哈';
 const b = [1, 2, 3];
 
@@ -37,8 +39,10 @@ module.exports = {
 }
 ```
 
-require:
+
 ```js
+// require:
+
 const {aaa, bbb} = require('./export');
 console.log(aaa,  bbb);
 ```
@@ -46,14 +50,14 @@ console.log(aaa,  bbb);
 ### ES Module
 虽然Node从12版本就开始支持，但操作起来比较麻烦，参考https://nodejs.cn/api/esm.html#esm_ecmascript_modules
 
-## The File System
+## The File System 文件读写
 想要读写文件，需要先引入fs模块：
 ```js
 const fs = require('fs');
 ```
 
 ### read file
-fs.readFile方法，接受两个参数，一个是文件地址，另一个是回调函数，回调函数中亦接受两个参数：
+`fs.readFile`方法，接受两个参数：一个是文件地址，另一个是回调函数，回调函数中亦接受两个参数。
 ```js
 const fs = require('fs');
 
@@ -65,12 +69,13 @@ fs.readFile('./docs/blog1.txt', ((err, data) => {
 }));
 console.log('done');
 
+// 打印结果：
 // done
 // Buffer< xx, yy, ..>
 ```
 
 ### writing files
-fs.writeFile方法会覆盖原来的内容
+`fs.writeFile`方法会覆盖原来的内容。同样的，第一个参数是文件的相对地址，第二个参数是内容，第三个参数是回调函数。
 ```js
 fs.writeFile('./docs/blog1.txt', 'hello world', () => {
   console.log('writing done.');
@@ -114,39 +119,43 @@ if (fs.existsSync('./docs/deleteme.txt')) {
 }
 ```
 
----
-## Streams
-The main idea is: <mark>start using data, before it has finished loading</mark>。
+## 流 Streams
 
-想象加载一部电影时，我们是不可能等电影所有的data都缓冲完毕才开始看这部电影，而是等这部电影加载一部分就可以看了，这一小块一小块的data称之为chunk。
+>Streams（流）是Node.js中的一个核心概念，它是一种处理流式数据的机制。在Node.js中，流可以将数据分成一系列小块，这些小块可以逐个地处理，从而提高数据处理的效率和性能。
 
-一个资源，先是以stream的方式传到客户端，fs中可以监听stream data，每当data装满一部分，就会被运送到客户端。
+>在Node.js中，有四种类型的流：可读流（Readable）、可写流（Writable）、双工流（Duplex）和转换流（Transform）。其中，可读流用于读取数据，可写流用于写入数据，双工流既可以读取数据也可以写入数据，转换流用于在读取和写入数据之间进行转换。
 
-#### readStream
+想象你在加载一部电影时，不可能等电影所有的data都缓冲完毕才开始看这部电影，一般等一部分缓冲(Buffer)好就可以开始看了，这一小块一小块的data称之为**chunk**。
+
+一个资源，先是以stream的方式传到客户端，利用`readStream.on()`监听stream data，每当data装满一部分，就会被运送到客户端。
+
+#### 读取 readStream
 假设我们有一个文件 `./docs/blog2.txt`，即将通过stream传到客户端：
 
 ```js
 const fs = require('fs');
 
+//这里创建了一个可读文件
 const readStream = fs.createReadStream('./docs/blog2.txt');
 
 // 监听事件
 readStream.on('data', (chunk) => {
+  // 一旦chunk存在，就打印内容
   console.log('-----new chunk-----');
   console.log(chunk);
 })
 ```
-运行文件，我们可以得到：
+运行文件，我们发现，控制台打印了分割线`'-----new chunk-----'`以及一大堆二进制的数据 `<Buffer 61 61 61 61 ...>`
 
 ![20230611231208](https://nic-gz-1308403500.file.myqcloud.com/vitepress/02_Node_js_Basics-2023-06-19-23-24-22.png)
 
-#### writeStream
+#### 写入 writeStream
 除了`readStream`，我们还可以`writeStream`:
 ```js
 const fs = require('fs');
 
 const readStream = fs.createReadStream('./docs/blog2.txt' );
-
+// 在 blog3.txt 中写入内容
 const writeStream = fs.createWriteStream('./docs/blog3.txt')
 
 readStream.on('data', (chunk) => {
@@ -162,13 +171,16 @@ readStream.on('data', (chunk) => {
 #### pipe
 除了上面那种写法，还可以用pipe达到相同的目的。
 
+在Node.js中，pipe（管道）是一种将可读流和可写流连接在一起的机制。通过使用`pipe()`方法，我们可以**将一个可读流的输出直接连接到一个可写流的输入**，从而实现数据的流式传输和处理。
+
+
 ```js
 const fs = require('fs');
 
 const readStream = fs.createReadStream('./docs/blog2.txt' );
-
 const writeStream = fs.createWriteStream('./docs/blog3.txt')
 
+// 不需要监听读取文件了
 // readStream.on('data', (chunk) => {
 //   console.log('-----new chunk-----');
 //   console.log(chunk);
@@ -176,7 +188,6 @@ const writeStream = fs.createWriteStream('./docs/blog3.txt')
 //   writeStream.write(chunk);
 // })
 
+// 读取文件后直接写入
 readStream.pipe(writeStream);
 ```
-
-删除blog3.txt，然后运行上面的代码，也会得到和前面一样的blog3.txt
