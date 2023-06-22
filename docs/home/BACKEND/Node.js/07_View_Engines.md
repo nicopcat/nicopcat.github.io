@@ -4,6 +4,7 @@ title: 7 - View Engines
 ---
 
 # 7 - View Engines
+>Node js view engine is like Blade in Laravel. The most basic definition is that the view engine is a tool that helps us write HTML code and reuse it in a shorter and simpler way than usual. In addition, it can import data from the server side and render the final HTML.
 
 Something just like HTML with a slight difference ?
 
@@ -15,7 +16,7 @@ Something just like HTML with a slight difference ?
 > ——ChatGPT Turbo 3.5
 
 ### 安装
-```
+```shellscript
 npm i ejs
 ```
 
@@ -25,7 +26,7 @@ npm i ejs
 app.set('view engine','ejs');
 ```
 
-然后就可以在./views中写ejs文件了。ejs文件和HTML几乎一样，但它可以动态插入代码和变量。
+ejs文件和HTML几乎一样，但它可以动态插入代码和变量。
 
 使用`render()`方法渲染：
 ```js
@@ -59,7 +60,7 @@ app.get('/', (req, res) => {
 ```js
 app.get('/', (req, res) => {
   const blogs = [
-    { title: '玩玩Node.js', content: '好好玩好好玩好好玩' },
+    {title: '玩玩Node.js', content: '好好玩好好玩好好玩' },
     {title:'东门沙角', content:'好好玩好好玩好好玩'},
     {title:'天气', content:'今天天气不错，但下午又热了起来'},
 

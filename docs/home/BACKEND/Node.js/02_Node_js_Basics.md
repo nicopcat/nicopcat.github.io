@@ -5,12 +5,12 @@ title: 2 - Node.js Basics
 
 # 2 - Node.js Basics
 
-## install node
+## Install node
 安装完成后，输入命令查看Node.js版本号：
 ```
 node -v
 ```
-## window object
+## Window object
 JavaScript在浏览器中运行的时候，浏览器会提供全局的window对象，其中包含很多方法，例如定时器`window.setTimeout`, `window.setInterval`等等。
 
 在Node环境里也有window对象，用法和在浏览器中一样。
@@ -20,9 +20,10 @@ Node环境中也不能（不需要）操作DOM，这是跟浏览器不一样的�
 
 ## 模块的导入/导出 Import/Export 
 
-Node.js中推荐使用 CommonJS 对模块导入导出
+Node.js中推荐使用 ****CommonJS**** 对模块导入导出。
 
-Since Node.js v12, you can use both `require()` and `import` in Node.js, while you are limited to `import` in the browser.
+
+自 Node.js v12 开始，你可以在 Node.js 中同时使用 `require()` 和 `import`，而在浏览器中，你只能使用 `import`。
 
 ### CommonJS Module ✔
 ```js

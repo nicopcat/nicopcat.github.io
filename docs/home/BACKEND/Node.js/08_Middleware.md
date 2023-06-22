@@ -3,9 +3,9 @@ layout: doc
 title: 8 - Middleware
 ---
 
-# 8 - Middleware
+# 8 - 中间件 Middleware
 
-Code which runs (on the server) between getting a request and sending a response
+指在服务器接收请求和发送响应之间运行的代码。
 
 >在 Node.js 中，中间件是指一个函数或者一组函数，它们可以被嵌入到 HTTP 请求和响应处理流程中，用于完成特定的任务，例如日志记录、身份验证、请求转发、数据格式转换等等。中间件可以被看作是一个拦截器或者过滤器，它们可以修改请求和响应对象，或者在处理请求和响应之前或之后执行某些操作。
 
@@ -18,7 +18,7 @@ app.use((req, res) => {
 ```
 
 ## 使用next()
-next() 有着放行的作用，如果不call next(), 那么请求将卡在这个中间件里
+`next()` 有着放行的作用，如果不call `next()`, 那么请求将卡在这个中间件里
 ```js
 app.use((req, res, next) => {
   console.log('第一个中间件');
@@ -55,7 +55,7 @@ app.use(morgan('tiny'));
 ```
 
 ## Static Files
-从之前的实践中，我们目前只能在`<head>`标签中写内联样式，而不能Link到一个.css文件，这是因为App没用对文件进行处理。
+从之前的实践中，我们目前只能在`<head>`标签中写内联样式，而不能用外联的.css文件，这是因为App没用对文件进行处理。
 
 处理静态文件，可以用Express自带的中间件。
 

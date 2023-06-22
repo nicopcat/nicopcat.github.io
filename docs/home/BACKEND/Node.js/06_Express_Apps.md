@@ -5,7 +5,11 @@ title: 6 - Express Apps
 
 # 6 - Express Apps
 
-Express is a framework that helps us to easily manage routing requests server-side logic and responses in a much more elegant way.
+>Express.js是一个基于Node.js平台的Web应用程序框架，它提供了一组强大的特性和工具，使得创建Web应用程序和API更加简单和快速。Express.js具有简单的API、易于学习、灵活性强、可扩展性好等特点，被广泛用于构建各种类型的Web应用程序，包括单页面应用程序、多页面应用程序、RESTful API等。由于其流行和活跃的社区支持，Express.js已成为Node.js生态系统中最受欢迎的Web框架之一。
+
+简单地，Express 是 Node.js 的一个框架，它可以帮助我们更加优雅地管理路由请求、服务端逻辑和响应。
+
+上一篇使用的是Node.js内置功能，接下来就使用Express实现同样的功能。
 
 ## 安装
 ```
@@ -39,7 +43,7 @@ app.get('/about', (req, res) => {
 
 以上代码分别为根目录`/`设置了路径，和返回的html文件，浏览器输入`/`时，会访问**index.html**，浏览器输入`/about`，则访问**about.html**。
 
-然后加上一个navbar
+然后加上一个navbar，点击Home，浏览器访问`'localhost:3000/'`，后台受收到请求，返回相应的文件。
 ```html
   <nav>
     <a href="/">Home</a>
@@ -47,7 +51,6 @@ app.get('/about', (req, res) => {
   </nav>
 ```
 
-简直就是一个小网站了。
 
 ## Redirects & 404
 It's very easy to do redirect with express app.

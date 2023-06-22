@@ -5,16 +5,24 @@ title: 3 - Clients & Servers
 
 # 3 - Clients & Servers
 
-## creating a server
-- create a server
-- listen to the request and then respond
+## 创建一个server
+我们的下一个目标是：
 
-首先引入`http`模块，才能使用http功能：
+- 创建一个server
+- 监听请求然后回应
+
+
+**引入`http`模块**
+
 ```js
 const http = require('http');
 ```
 
-然后通过http里的`createServer`方法创建服务器，它接收一个回调函数，包含`request`和`respond`两个参数：
+
+
+**创建服务器**
+
+通过`createServer`方法创建服务器。它接收一个回调函数，包含`request`和`respond`两个参数：
 ```js
 const server = http.createServer((req, res) => {
   console.log('made a request');
@@ -22,7 +30,10 @@ const server = http.createServer((req, res) => {
 });
 ```
 
-最后是监听该服务器，当有访问的时候，进行监听。监听时需要设置port和ip地址。
+
+**监听**
+
+当有访问的时候，进行监听。监听时需要设置port和ip地址。
 ```js
 server.listen(3000, 'localhost', () => {
   console.log('port: 3000');
@@ -60,7 +71,9 @@ const server = http.createServer((req, res) => {
 这种做法肯定是不可取的啦，最终返回的还得是文件，然后再进行渲染。
 
 ## 返回 HTML 文件
-如何给客户端返回一个HTML文件呢？那就需要引入fs模块，使用fs.readFile读取文件，随后返回给客户端。
+如何给客户端返回一个HTML文件呢？
+
+那就需要引入fs模块，使用fs.readFile读取文件，随后返回给客户端。
 
 ```js
 const http = require('http');
@@ -148,7 +161,7 @@ res.statusCode = 200;
 ```
 or `writeHead`
 ```js
-  res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
 ```
 
 ## redirects

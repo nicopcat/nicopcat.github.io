@@ -7,15 +7,30 @@ title: 9 - MongoDB
 
 ## SQL和NoSQL的区别
 
+SQL（Structured Query Language）和NoSQL（Not Only SQL）是两种不同类型的数据库系统。SQL是关系型数据库（RDBMS）的代表，而NoSQL则是非关系型数据库（NOSQL）的代表。以下是它们之间的一些主要区别：
+
+**数据模型**：SQL数据库使用表格数据模型，数据被组织为行和列。而NoSQL数据库则使用各种不同的数据模型，包括文档、键值、列族和图形等。
+
+**数据结构**：SQL数据库要求在设计表格结构时事先定义好列名和数据类型，而NoSQL数据库则支持动态的、非结构化的数据，可以随时添加或删除字段。
+
+**可扩展性**：NoSQL数据库具有更好的可扩展性，可以通过分片和复制等方式轻松地增加处理能力和可靠性，而SQL数据库则需要使用更复杂的分区和复制技术。
+
+**事务处理**：SQL数据库支持事务处理，确保数据的一致性和完整性，而NoSQL数据库则通常不支持事务处理，因此在数据一致性和完整性方面可能存在一些限制。
+
+**查询语言**：SQL数据库使用SQL查询语言，可以完成复杂的查询操作，包括联合、交集、排序等。而NoSQL数据库则通常使用基于键值的查询语言，仅支持简单的查询操作。
+
+MongoDB属于非关系型数据库。
+
 | SQL | NoSQL |
 |---|---|
 | Table | Collections|
 | Rows | Documents|
 | Columns | |
-详情查看文章[[SQL和NoSQL的区别]]]
 
 ## MongoDB Setup & Atlas
 https://cloud.mongodb.com/
+
+具体的注册和setup可以参考视频。
 
 ## Mongoose, Models & Schemas
 
@@ -127,7 +142,7 @@ app.get('/new', (req, res) => {
 })
 ```
 
-用find方法读取所有blogs：
+用`find`方法读取所有blogs：
 ```js
 app.get('/all-blogs', (req, res) => {
   Blog.find().then((r) => {
@@ -165,7 +180,7 @@ app.get('/blogs', (req, res) => {
   })
 })
 ```
-find()方法后可以接一个.sort()方法，对数据进行排序：
+`find()`方法后可以接一个`.sort()`方法，对数据进行排序：
 ```js
 Blog.find().sort({ createdAt: -1}).then().catch()
 ```
