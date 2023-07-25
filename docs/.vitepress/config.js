@@ -35,6 +35,7 @@ export default {
         items: [
           { text: 'JavaScript', link: '/javascript/' },
           { text: 'Vue', link: '/vue/001_dodo_v2' },
+          { text: 'React', link: '/react/react-tutorial/01~07_React_Basics' },
           { text: 'Uniapp', link: '/uniapp/' },
           { text: 'SQL', link: '/SQL/SQL_Murder_Mystery' },
           { text: '其他', link: '/tech_other/axios_basics' },
@@ -88,6 +89,25 @@ export default {
             { text: 'Ant Design Vue Table 加一个合计行', link: '/vue/009_andtv_table_sum' },
             { text: '使用vue filters把数字变为两位小数', link: '/vue/010_vue_filter_fixed2' },
             { text: '把jeecg j-date改造成年份选择器', link: '/vue/011_j_date_year_selector' },
+          ]
+        },
+      ],
+      '/react/':[
+        {
+          text: 'React Tutorial',
+          collapsible: true,
+          items: [
+            { text: '1. React 基础', link: '/react/react-tutorial/01~07_React_Basics' },
+            { text: '2. useState', link: '/react/react-tutorial/08_useState' },
+            { text: '3. 循环列表', link: '/react/react-tutorial/10_Cycle_List' },
+            { text: '4. Props_and_Filter', link: '/react/react-tutorial/11~13_Props_and_Filter' }, 
+            { text: '5. useEffect_Hook', link: '/react/react-tutorial/14~17_useEffect_Hook' },
+            { text: '6. 条件渲染', link: '/react/react-tutorial/18_Conditional_Render' },
+            { text: '7. 处理请求错误', link: '/react/react-tutorial/19_Handling_Fetch_Errors' },
+            { text: '8. 创建自定义Hook', link: '/react/react-tutorial/20_Making_a_Custom_Hook' },
+            { text: '9. React 路由', link: '/react/react-tutorial/21~25_The_React_Router' },
+            { text: '10. POST请求', link: '/react/react-tutorial/29_ Making_A_POST_Request' },
+            { text: '11. 404错误页', link: '/react/react-tutorial/32_404_Page' },
           ]
         },
       ],
