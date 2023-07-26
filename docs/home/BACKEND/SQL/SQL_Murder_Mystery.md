@@ -205,16 +205,16 @@ WHERE plate_number LIKE "%H42W%";
 ## 5. Jeremy Bowers的供词
 
 | person_id | transcript |
-| --- | --- |
+| :---------- | :------- |
 | 67318 | I was hired by a woman with a lot of money. I don't know her name but I know she's around 5'5" (65") or 5'7" (67"). She has red hair and she drives a Tesla Model S. I know that she attended the SQL Symphony Concert 3 times in December 2017. |
 
 从演唱会得出两人：
 
 **person_id为24556或99716**
 
-| ssn | annual_income | id | name | license_id | address_number | address_street_name | ssn | id | age | height | eye_color | hair_color | gender | plate_number | car_make | car_model |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 987756388 | 310000 | 99716 | Miranda Priestly | 202298 | 1883 | Golden Ave | 987756388 | 202298 | 68 | 66 | green | red | female | 500123 | Tesla | Model S |
+| ssn |annual_income | id | name | license_id | address_number | address_street_name | ssn | id | age | height | eye_color | hair_color | gender | plate_number | car_make | car_model |
+| --- | ------- | --- | --- | --- | ------- | --------- | ----------- | --- | --- | --- | ----- | ------ | ------- | ---- | ------- | ------- |
+| 987756388 | 310000 | 99716 | Miranda Priestly &nbsp; &nbsp; | 202298 | 1883 | Golden Ave | 987756388 | 202298 | 68 | 66 | green | red | female | 500123 | Tesla | Model S |
  
 
  此时，基本可以确定，嫌疑人Jeremy供词中的有钱BOSS就是这个id为310000的Miranda Priestly。

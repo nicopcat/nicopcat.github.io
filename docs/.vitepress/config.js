@@ -33,12 +33,11 @@ export default {
       {
         text: 'FRONTEND',
         items: [
-          { text: 'JavaScript', link: '/javascript/' },
-          { text: 'Vue', link: '/vue/001_dodo_v2' },
-          { text: 'React', link: '/react/react-tutorial/01~07_React_Basics' },
-          { text: 'Uniapp', link: '/uniapp/' },
-          { text: 'SQL', link: '/SQL/SQL_Murder_Mystery' },
-          { text: '其他', link: '/tech_other/axios_basics' },
+          { text: 'JavaScript', link: '/home/FRONTEND/javascript/' },
+          { text: 'Vue', link: '/home/FRONTEND/vue/001_dodo_v2' },
+          { text: 'React', link: '/home/FRONTEND/react/react-tutorial/01~07_React_Basics' },
+          { text: 'Uniapp', link: '/home/FRONTEND/uniapp/' },
+          { text: '其他', link: '/home/tech_other/axios_basics' },
         ]
       },
       {
@@ -104,7 +103,7 @@ export default {
           collapsible: true,
           items: [
             { text: 'Vue-Cli重写一个TO-DO APP', link: '/home/FRONTEND/vue/001_dodo_v2' },
-            { text: '用Vue实现多标签页面（tab栏）切换的两种方法', link: '002_/vue/tabs_with_vue' },
+            { text: '用Vue实现多标签页面（tab栏）切换的两种方法', link: '/home/FRONTEND/vue/002_tabs_with_vue' },
             { text: 'cloak的用法', link: '/home/FRONTEND/vue/003_v-cloak' },
             { text: 'Vue 过渡动画效果', link: '/home/FRONTEND/vue/004_vue_animations_transitions' }, 
             { text: 'Vue Proxy Getter Setter', link: '/home/FRONTEND/vue/005_vue_proxy_getter_setter' },
@@ -117,26 +116,26 @@ export default {
           ]
         },
       ],
-      '/react/':[
+      '/home/FRONTEND/react/':[
         {
           text: 'React Tutorial',
           collapsible: true,
           items: [
-            { text: '1. React 基础', link: '/react/react-tutorial/01~07_React_Basics' },
-            { text: '2. useState', link: '/react/react-tutorial/08_useState' },
-            { text: '3. 循环列表', link: '/react/react-tutorial/10_Cycle_List' },
-            { text: '4. Props_and_Filter', link: '/react/react-tutorial/11~13_Props_and_Filter' }, 
-            { text: '5. useEffect_Hook', link: '/react/react-tutorial/14~17_useEffect_Hook' },
-            { text: '6. 条件渲染', link: '/react/react-tutorial/18_Conditional_Render' },
-            { text: '7. 处理请求错误', link: '/react/react-tutorial/19_Handling_Fetch_Errors' },
-            { text: '8. 创建自定义Hook', link: '/react/react-tutorial/20_Making_a_Custom_Hook' },
-            { text: '9. React 路由', link: '/react/react-tutorial/21~25_The_React_Router' },
-            { text: '10. POST请求', link: '/react/react-tutorial/29_ Making_A_POST_Request' },
-            { text: '11. 404错误页', link: '/react/react-tutorial/32_404_Page' },
+            { text: '1. React 基础', link: '/home/FRONTEND/react/react-tutorial/01~07_React_Basics' },
+            { text: '2. useState', link: '/home/FRONTEND/react/react-tutorial/08_useState' },
+            { text: '3. 循环列表', link: '/home/FRONTEND/react/react-tutorial/10_Cycle_List' },
+            { text: '4. Props_and_Filter', link: '/home/FRONTEND/react/react-tutorial/11~13_Props_and_Filter' }, 
+            { text: '5. useEffect_Hook', link: '/home/FRONTEND/react/react-tutorial/14~17_useEffect_Hook' },
+            { text: '6. 条件渲染', link: '/home/FRONTEND/react/react-tutorial/18_Conditional_Render' },
+            { text: '7. 处理请求错误', link: '/home/FRONTEND/react/react-tutorial/19_Handling_Fetch_Errors' },
+            { text: '8. 创建自定义Hook', link: '/home/FRONTEND/react/react-tutorial/20_Making_a_Custom_Hook' },
+            { text: '9. React 路由', link: '/home/FRONTEND/react/react-tutorial/21~25_The_React_Router' },
+            { text: '10. POST请求', link: '/home/FRONTEND/react/react-tutorial/29_ Making_A_POST_Request' },
+            { text: '11. 404错误页', link: '/home/FRONTEND/react/react-tutorial/32_404_Page' },
           ]
         },
       ],
-      '/uniapp/':[
+      '/home/FRONTEND/uniapp/':[
         {
           text: 'uniapp',
           collapsible: true,
@@ -159,7 +158,7 @@ export default {
       '/home/BACKEND/SQL/':[
         {
           text: 'SQL Murder Mystery',
-          collapsible: true,
+          collapsible: false,
           items: [
             { text: 'SQL Murder Mystery', link: '/home/BACKEND/SQL/SQL_Murder_Mystery' },
           ]
