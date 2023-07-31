@@ -33,6 +33,7 @@ export default {
       {
         text: 'FRONTEND',
         items: [
+          { text: 'TypeScript', link: '/home/FRONTEND/typescript/' },
           { text: 'JavaScript', link: '/home/FRONTEND/javascript/' },
           { text: 'Vue', link: '/home/FRONTEND/vue/001_dodo_v2' },
           { text: 'React', link: '/home/FRONTEND/react/react-tutorial/01~07_React_Basics' },
@@ -68,6 +69,15 @@ export default {
             { text: '9 - MongoDB', link: '/home/BACKEND/Node.js/09_MongoDB' },
             { text: '10 - Post & Delete Requests', link: '/home/BACKEND/Node.js/10_Get_Post_Delete_Requests' },
             { text: '11 - Express Router & MVC', link: '/home/BACKEND/Node.js/11_Express_Router_MVC' },
+          ]
+        },
+      ],
+      '/home/FRONTEND/typescript/':[
+        {
+          text: 'TypeScript 笔记',
+          collapsible: false,
+          items: [
+            { text: 'Object-Oriented Programming in TypeScript', link: '/home/FRONTEND/typescript/Object-Oriented Programming in TypeScript.md' }, 
           ]
         },
       ],
