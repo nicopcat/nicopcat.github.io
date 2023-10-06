@@ -67,6 +67,7 @@ export default {
             { text: '9 - MongoDB', link: '/home/BACKEND/Node.js/09_MongoDB' },
             { text: '10 - Post & Delete Requests', link: '/home/BACKEND/Node.js/10_Get_Post_Delete_Requests' },
             { text: '11 - Express Router & MVC', link: '/home/BACKEND/Node.js/11_Express_Router_MVC' },
+            { text: '12 - 部署到 Vercel', link: '/home/BACKEND/Node.js/12_Deploy_on_Vercel' }, 
           ]
         },
       ],
@@ -175,6 +176,7 @@ export default {
             { text: 'Node.js POST请求', link: '/home/tech_other/node_POST' }, 
             { text: 'TS基础学习', link: '/home/tech_other/ts-intro' },
             { text: 'flutter 已未读消息存本地', link: '/home/tech_other/flutter_notice_localStorage' }, 
+
           ]
         },
        
