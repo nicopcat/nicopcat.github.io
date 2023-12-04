@@ -88,7 +88,7 @@ export default {
           collapsible: true,
           items: [
             { text: 'HTML中的 JavaScript', link: '/home/FRONTEND/javascript/js_4_notes/script_tag' }, 
-            { text: '操作符', link: '/home/FRONTEND/javascript/js_4_notes/operator' },     
+            { text: '操作符', link: '/home/FRONTEND/javascript/js_4_notes/operator' },   
           ]
         },
         {
@@ -104,7 +104,7 @@ export default {
             { text: '力扣 oh Leetcode', link: '/home/FRONTEND/javascript/other/my-miserable-leetcode' }, 
             { text: 'JavaScript 中 this 的绑定', link: '/home/FRONTEND/javascript/other/this-and-context' }, 
             { text: 'ES6数组与对象的解构赋值', link: '/home/FRONTEND/javascript/other/variable-destructuring' }, 
-
+            { text: '如何美化JSON字串的格式', link: '/home/FRONTEND/javascript/other/如何美化JSON字串的格式' },
           ]
         },
       ],
@@ -124,6 +124,8 @@ export default {
             { text: 'Ant Design Vue Table 加一个合计行', link: '/home/FRONTEND/vue/009_andtv_table_sum' },
             { text: '使用vue filters把数字变为两位小数', link: '/home/FRONTEND/vue/010_vue_filter_fixed2' },
             { text: '把jeecg j-date改造成年份选择器', link: '/home/FRONTEND/vue/011_j_date_year_selector' },
+            { text: '如何在element-ui的基础上自行分页', link: '/home/FRONTEND/vue/012_如何在element-ui的基础上自行分页' },
+
           ]
         },
       ],

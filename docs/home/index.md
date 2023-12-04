@@ -10,7 +10,7 @@ hero:
   tagline: Nic的小笔记本📒
   image:
     src: /static/android-chrome-192x192.png
-    alt: capybara_janew
+    alt: capybara_by_janew
   actions:
     - theme: brand
       text: 我是谁？
