@@ -33,7 +33,7 @@ export default {
       {
         text: 'FRONTEND',
         items: [
-          { text: 'TypeScript', link: '/home/FRONTEND/typescript/' },
+          // { text: 'TypeScript', link: '/home/FRONTEND/typescript/' },
           { text: 'JavaScript', link: '/home/FRONTEND/javascript/' },
           { text: 'Vue', link: '/home/FRONTEND/vue/001_dodo_v2' },
           { text: 'React', link: '/home/FRONTEND/react/react-tutorial/01~07_React_Basics' },
@@ -83,14 +83,14 @@ export default {
         },
       ],
       '/home/FRONTEND/javascript/':[
-        {
-          text: 'JavaScript高级程序设计 笔记',
-          collapsible: true,
-          items: [
-            { text: 'HTML中的 JavaScript', link: '/home/FRONTEND/javascript/js_4_notes/script_tag' }, 
-            { text: '操作符', link: '/home/FRONTEND/javascript/js_4_notes/operator' },   
-          ]
-        },
+        // {
+        //   text: 'JavaScript高级程序设计 笔记',
+        //   collapsible: true,
+        //   items: [
+        //     { text: 'HTML中的 JavaScript', link: '/home/FRONTEND/javascript/js_4_notes/script_tag' }, 
+        //     { text: '操作符', link: '/home/FRONTEND/javascript/js_4_notes/operator' },   
+        //   ]
+        // },
         {
           text: '其他',
           collapsible: true,
@@ -113,13 +113,12 @@ export default {
           text: 'vue笔记',
           collapsible: true,
           items: [
-            { text: 'Vue-Cli重写一个TO-DO APP', link: '/home/FRONTEND/vue/001_dodo_v2' },
-            { text: '用Vue实现多标签页面（tab栏）切换的两种方法', link: '/home/FRONTEND/vue/002_tabs_with_vue' },
+            // { text: 'Vue-Cli重写一个TO-DO APP', link: '/home/FRONTEND/vue/001_dodo_v2' },
+            // { text: '用Vue实现多标签页面（tab栏）切换的两种方法', link: '/home/FRONTEND/vue/002_tabs_with_vue' },
             { text: 'cloak的用法', link: '/home/FRONTEND/vue/003_v-cloak' },
             { text: 'Vue 过渡动画效果', link: '/home/FRONTEND/vue/004_vue_animations_transitions' }, 
             { text: 'Vue Proxy Getter Setter', link: '/home/FRONTEND/vue/005_vue_proxy_getter_setter' },
-            { text: '复习 Vue slot：插槽', link: '/home/FRONTEND/vue/006_vue_slot' },
-            { text: 'Vue emits 警告', link: '/home/FRONTEND/vue/007_vue_warn_emits' },
+            // { text: '复习 Vue slot：插槽', link: '/home/FRONTEND/vue/006_vue_slot' },
             { text: '用 Vue 写一个天气 Web App', link: '/home/FRONTEND/vue/008_vue_weather_app' },
             { text: 'Ant Design Vue Table 加一个合计行', link: '/home/FRONTEND/vue/009_andtv_table_sum' },
             { text: '使用vue filters把数字变为两位小数', link: '/home/FRONTEND/vue/010_vue_filter_fixed2' },
