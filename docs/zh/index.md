@@ -6,15 +6,15 @@ description: test
 lastUpdated: true
 
 hero:
-  name: Nic's Tavern
-  tagline: just share some thoughts📒
+  name: 小酒馆
+  tagline: Nic的小笔记本📒
   image:
     src: /static/android-chrome-192x192.png
     alt: capybara_janew
   actions:
     - theme: brand
-      text: Who?
-      link: en/about
+      text: 我是谁？
+      link: /zh/about
     - theme: alt
       text: github
       link: https://github.com/nicopcat
@@ -24,7 +24,7 @@ features:
     details: much to learn and try ✌
   - icon: 🎵
     title: A deep listener
-    details: I love music
+    details: 幸福莫过于期待着下一张专辑
   - icon: 🎬
     title: A dreamer
     details: One of the greatest power that Morphius possesses, is to dream and hope, against Luficer

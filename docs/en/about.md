@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: 关于我
+title: aboutme
 ---
 
 # About Nic

@@ -13,3 +13,5 @@ TODOs.md
 .temp
 *.tgz
 yarn-error.log
+
+docs/.vitepress/cache/
