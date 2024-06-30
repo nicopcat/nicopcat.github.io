@@ -42,16 +42,7 @@ export default {
         outlineTitle: '目录',
         lastUpdatedText: '最后更新于 ',
         nav: [
-          // 下拉菜单
-          // {
-          //   text: 'BACKEND',
-          //   items: [
-          //     { text: 'Node.js', link: '/zh/home/BACKEND/Node.js/' },
-          //     { text: 'SQL', link: '/zh/home/BACKEND/SQL/SQL_Murder_Mystery' },
-          //   ]
-          // },
           { text: 'home', link: '/en' },
-
           { text: 'about', link: '/en/about' },
         ],
         // 侧边导航
@@ -72,7 +63,6 @@ export default {
     zh: {
       label: '中文',
       lang: 'zh', // 可选，将作为 `lang` 属性添加到 `html` 标签中
-      link: '', // 默认 /fr/ -- 显示在导航栏翻译菜单上，可以是外部的
       themeConfig: {
         outlineTitle: '目录',
         lastUpdatedText: '最后更新于 ',
