@@ -1,8 +1,18 @@
 :root {
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #aeb2c2, #319f0f);
+}
+
+.dark {
+  --vp-c-green-1: #1dc51a;
+  --vp-c-green-2: #228c20;
+  --vp-c-green-3: #236322;
+
+  --vp-c-brand-1: var(--vp-c-green-1);
+  --vp-c-brand-2: var(--vp-c-green-2);
+  --vp-c-brand-3: var(--vp-c-green-3);
 }
 .dark .VPContent{
-  background-color: #0a0a0b;
-  background-image: url(/grid.svg);
+  background-color: #141414;
+  background-image: url("/static/grid.svg");
 }
