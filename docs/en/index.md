@@ -1,8 +1,8 @@
 ---
 layout: home
-title: 小笔记本
-titleTemplate: Nic的小酒馆
-description: test
+title: Nic's Tavern
+titleTemplate: Nic
+description: somewhere i write something down :)
 lastUpdated: true
 
 hero:
