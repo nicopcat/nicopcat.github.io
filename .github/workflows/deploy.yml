@@ -47,8 +47,8 @@ jobs:
         run: npm run docs:build # or pnpm docs:build / yarn docs:build / bun run docs:build
       - name: Add redirect rule
         run: |
-          echo '/ /en/ 302' > docs/public/_redirects
-          git add docs/public/_redirects
+          echo '/ /en/ 302' > docs/.vitepress/dist/_redirects
+          git add docs/.vitepress/dist/_redirects
           git config user.name 'GitHub Actions'
           git config user.email 'actions@github.com'
           git commit -m "Add redirect rule"
